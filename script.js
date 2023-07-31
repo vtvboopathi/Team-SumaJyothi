@@ -234,9 +234,28 @@ function updateTime(){
   let time = today.getHours()+':'+today.getMinutes()+':'+secondss
   timee.innerText = time
   
-  if(secondss < 10){
-    secondss = '0'+secondss
-  }
+
+// 00000000000000000000000
+
+  // function printTime(){
+  //   let today = new Date()
+
+  //   let hour = today.getHours()
+  //   let min = today.getMinutes()
+  //   let sec = today.getSeconds()
+
+  //   let fullTime = hour+'/'+min+'/'+sec
+  //   timee.innerText = fullTime
+  //   return
+
+  //   if(hour.value > 12){
+  //     hour = hour - 12
+  //   }
+
+  // }
+
+// 000000000000000000000000
+
 
   let day = today.getDay()
   let orgDay = noOfDay[day]
@@ -247,8 +266,6 @@ function updateTime(){
 setInterval(updateTime, 1000)
 
 
-
-
-// window.onbeforeunload = function (e) {
-//   e.returnValue = '';
-//   };
+window.onbeforeunload = function (e) {
+  e.returnValue = '';
+  };
