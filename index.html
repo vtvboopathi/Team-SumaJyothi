@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Suma - Check In Meet</title> 
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <link rel="shortcut icon" href="focus.png" type="image/x-icon">
+   </head>
+<body> 
+  <nav>
+    <div class="menu">
+      <div class="logo">
+        <a href="#">TEAM - SUMAJYOTHI DEVAPUJALA</a>
+      </div>
+      <ul>
+        <li><p id="time" class="time"></p></li>
+        <li><p id="date" class="time"></p></li>
+        <li><p id="day" class="time"></p></li>
+        <!-- <li><a href="#"></a></li> -->
+        <!-- <li><a href="#">Contact</a></li> -->
+        <!-- <li><a href="#">Feedback</a></li> -->
+      </ul>
+    </div>
+  </nav>
+  <section class="home">
+    <div class="img"></div>
+  <div class="center">
+    <div class="title">FOCUS EDUMATICS <br> TEAM - SUMAJYOTHI DEVAPUJALA</i></div>
+    <div class="sub_title"></div>
+    <div class="btns">
+    </div>
+  </div>
+  </section>
+
+  <section class="main">
+    <div class="left">
+        <div class="stick">
+          <a href="#kpi" class="aa"><h5>KPI</h5></a>
+          <a href="#occ" class="aaa"><h5>Highest Occupancy</h5></a>
+          <a href="#pos" class="aaaa"><h5>Positive Comments</h5></a>
+          <a href="#question" class="aaaaa"><h5>Activity Question</h5></a>
+          <a href="#edit" class="a1" style="opacity: 0.2;"><h5>Edit</h5></a>
+        </div>
+    </div>
+    <div class="right" id="kpi">
+      <div class="id"></div>
+      <div class="kpi cont" style="background-color: #df6a78;">
+        <h1>Today's KPI</h1>
+        <div class="content" >
+          <div class="one">
+            <div class="inner">
+              <h2>Session Count: <span id="count"></span></h2>
+              <h2>On Demand: <span id="od"></span></h2>
+              <h2>Avg Student Wait Time(secs): <span id="swt"></span></h2>
+              <h2>Avg Tutor Response Time: <span id="trt"></span></h2>
+              <h2>Avg First Question Load Time: <span id="fqlt"></span></h2>
+              <h2>Tutor Rating: <span id="tr"></span></h2>
+              <h2>Session Rating: <span id="sr"></span></h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="id" id="occ"></div>
+      <div class="occ cont" style="background-color: #66c796;">
+        <h1>Highest Occupancy</h1>
+        <div class="content">
+          <div class="one">
+            <div class="inner">
+              <h2 id="occ-1"></h2>
+              <h2 id="occ-2"></h2>
+              <h2 id="occ-3"></h2>
+              <h2 id="occ-4"></h2>
+              <h2 id="occ-5"></h2>
+              <h2 id="occ-6"></h2>
+              <h2 id="occ-7"></h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="id" id="pos"></div>
+      <div class="pos cont" style="background-color: #f4ad49; height: auto; min-height: 80vh;">
+        <h1>Positive Comments</h1>
+        <div class="content commOne">
+          <div class="commOne">
+            <h2 id="tutorOne" class="white"></h2>
+            <h2 id="commOne" class="width"></h2>
+          </div>
+          <div class="commOne">
+            <h2 id="tutorTwo" class="white"></h2>
+            <h2 id="commTwo" class="width"></h2>
+          </div>
+          <div class="commOne">
+            <h2 id="tutorThree" class="white"></h2>
+            <h2 id="commThree" class="width"></h2>
+          </div>
+          <div class="commOne">
+            <h2 id="tutorFour" class="white"></h2>
+            <h2 id="commFour" class="width"></h2>
+          </div>
+          <div class="commOne">
+            <h2 id="tutorFive" class="white"></h2>
+            <h2 id="commFive" class="width"></h2>
+          </div>
+          <div class="commOne">
+            <h2 id="tutorSix" class="white"></h2>
+            <h2 id="commSix" class="width"></h2>
+          </div>
+          <div class="commOne">
+            <h2 id="tutorSeven" class="white"></h2>
+            <h2 id="commSeven" class="width"></h2>
+          </div>
+        </div>
+      </div>
+      <div class="id" id="question"></div>
+      <div class="question cont" style="background-color: #29b6d8;">
+        <h1>Activity Questions</h1>
+        <div class="ffff">
+          <div class="content width">
+            <h2 id="comm1"></h2>
+            <h2 id="comm2"></h2>
+            <h2 id="comm3"></h2>
+            <h2 id="comm4"></h2>
+            <h2 id="comm5"></h2>
+          </div>
+        </div>
+      </div>
+      <div class="id" id="edit"></div>
+      <div class="edit cont" id="edit">
+        <div class="kpi-edit main-edit">
+          <input type="text" id="countA" placeholder="Session Count">
+          <input type="text" id="odA" placeholder="On Demand">
+          <input type="text" id="swtA" placeholder="Average Student Wait Time">
+          <input type="text" id="trtA" placeholder="Average Tutor Response Time">
+          <input type="text" id="fqltA" placeholder="Average First Question Load Time">
+          <input type="text" id="trA" placeholder="Tutor Rating">
+          <input type="text" id="srA" placeholder="Session Rating">
+        </div>
+
+        <div class="occu-edit main-edit">
+          <input type="text" id="occuOne" placeholder="Tutor-1">
+          <input type="text" id="occuTwo" placeholder="Tutor-2">
+          <input type="text" id="occuThree" placeholder="Tutor-3">
+          <input type="text" id="occuFour" placeholder="Tutor-4">
+          <input type="text" id="occuFive" placeholder="Tutor-5">
+        </div>
+
+        <div class="main-edit pos-comm">
+          <div class="comm">
+            <input type="text" id="firstTutor" placeholder="Tutor Name">
+            <input type="text" id="firstComm" placeholder="Comments">
+          </div>
+          <div class="comm">
+            <input type="text" id="secTutor" placeholder="Tutor Name">
+            <input type="text" id="secComm" placeholder="Comments">
+          </div>
+          <div class="comm">
+            <input type="text" id="thirdTutor" placeholder="Tutor Name">
+            <input type="text" id="thirdComm" placeholder="Comments">
+          </div>
+          <div class="comm">
+            <input type="text" id="fourTutor" placeholder="Tutor Name">
+            <input type="text" id="fourComm" placeholder="Comments">
+          </div>
+          <div class="comm">
+            <input type="text" id="fiveTutor" placeholder="Tutor Name">
+            <input type="text" id="fiveComm" placeholder="Comments">
+          </div>
+          <div class="comm">
+            <input type="text" id="sixTutor" placeholder="Tutor Name">
+            <input type="text" id="sixComm" placeholder="Comments">
+          </div>
+          <div class="comm">
+            <input type="text" id="sevenTutor" placeholder="Tutor Name">
+            <input type="text" id="sevenComm" placeholder="Comments">
+          </div>
+        </div>
+
+        <div class="main-edit commentsSec">
+            <input type="text" id="question1" placeholder="Activity Question"> 
+            <input type="text" id="question2" placeholder="Activity Question">
+            <input type="text" id="question3" placeholder="Activity Question">
+            <input type="text" id="question4" placeholder="Activity Question">
+            <input type="text" id="question5" placeholder="Activity Question">
+        </div>
+      </div>
+    </div>
+  </section>
+
+<script src="script.js"></script>
+</body>
+</html>
